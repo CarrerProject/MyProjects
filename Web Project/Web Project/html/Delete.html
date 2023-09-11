@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete Your Book</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Poppins:wght@100;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Css/bookingSheet.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>Delete YOUR BOOK <span style="color: #fabd02;">!</span></h1>
+
+        <form action="../php/delete.php" class="form" method="POST">
+            <div class="grid">
+                <div class="field">
+                    <label>ID :
+                        <input type="number" name="cust_id" placeholder="Enter your ID" required>
+                    </label>
+                </div>
+                <div class="field" style="margin-top: 25px;">
+                    <input class="button" type="submit" value="Delete" name="del">
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

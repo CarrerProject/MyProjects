@@ -1,0 +1,30 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../photos/servecies.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.services {
+    width: 40%;
+    color: #ccc;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.services h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.services span {
+    color: #fabd02;
+}

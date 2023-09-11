@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Your Book</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Poppins:wght@100;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Css/bookingSheet.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>Edit YOUR BOOK <span style="color: #fabd02;">!</span></h1>
+
+        <form action="../php/update.php" class="form" method="POST">
+            <div class="grid">
+
+                <div class="field">
+                    <label>ID :
+                        <input type="number" name="cust_id" placeholder="Enter your id" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Full Name :
+                        <input type="text" name="cust_name" placeholder="Enter your name" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Email :
+                        <input type="email" name="cust_email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Address :
+                        <input type="text" name="cust_address" placeholder="Enter your address" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>where to :
+                        <input list="places" name="hotel" placeholder="Choose your place" required>
+                        <datalist id="places">
+                            <option value="Abiansemal-Indonesia">
+                            <option value="Udihana-Indonesia">
+                            <option value="Bali-Indonesia">
+                            <option value="BalianBeach-Indonesia">
+                            <option value="klumpu-Sengapore">
+                            <option value="Glamorous-Sengapore">
+                            <option value="Sentosa-Sengapore">
+                            <option value="Sidemen-Paris">
+                            <option value="Cul-De-Sac-Paris">
+                            <option value="Four Season-Dubai">
+                            <option value="feena-Dubai">
+                            <option value="palce-Dubai">
+                            <option value="Cabrera-SanMartin">
+                            <option value="LesTeres-SanMartin">
+                            <option value="eyana-Maldives">
+                            <option value="santa-Maldives">
+                            <option value="bekken-China">
+                        </datalist>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>How Many :
+                        <input type="number" min="1" name="guests" placeholder="How many guests?" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Arrivals :
+                        <input type="date" name="arrivals" title="When you want to come back?" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Leaving :
+                        <input type="date" name="leaving" title="When you want to get there?" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <input style="width: 100px;" class="button" type="submit" value="Edit">
+                </div>
+                <div class="field">
+                    <input style="width: 100px;" class="button" type="reset" value="Clear">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

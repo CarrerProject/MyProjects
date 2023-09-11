@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/abiansemel\ indonesia.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.nav {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fabd02;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main {
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    text-transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+span {
+    color: white;
+}
+
+.btn {
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #fabd02;
+    padding: 15px 40px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+.text h1 {
+    color: #fabd02;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.text p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 30px;
+    word-spacing: 3px;
+}
+
+.btnone {
+    padding: 13px 35px;
+    margin: 0px 10px;
+    letter-spacing: 1px;
+    border: 2px solid #fabd02;
+    color: #000;
+    border-radius: 30px;
+    background-color: #fabd02;
+    text-decoration: none;
+}
+
+.btnone:hover {
+    border: 2px solid #fabd02;
+    color: #fabd02;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.btntwo {
+    padding: 13px 35px;
+    margin: 0px 10px;
+    letter-spacing: 1px;
+    border: 2px solid #fabd02;
+    color: #000;
+    border-radius: 30px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.btntwo:hover {
+    border: 2px solid #fabd02;
+    color: #000;
+    background-color: #fabd02;
+    transition: 0.5s;
+}
+
+.form {
+    width: 210px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    float: right;
+    margin-right: 40px;
+    margin-top: -200px;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.form h2 {
+    width: 180px;
+    text-align: center;
+    color: #fabd02;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 200px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fabd02;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form form .log {
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid #fabd02;
+    color: #000;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.form form .log:hover {
+    border: 2px solid #fabd02;
+    color: #000;
+    background-color: #fabd02;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}

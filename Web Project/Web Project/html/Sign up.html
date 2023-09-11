@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign UP </title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html,web,design">
+
+    <meta name="description" content="this website helps...">
+    <link type="text/css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/signup.jpeg);
+            background-size: cover;
+        }
+
+        .signup {
+            width: 360px;
+            height: 550px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.705);
+            border-radius: 3px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }
+
+
+        form .log {
+            display: block;
+            text-align: center;
+            padding: 10px 15px;
+            margin-top: 20px;
+            margin-left: 25%;
+            letter-spacing: 1px;
+            border: 2px solid #fabd02;
+            color: #000;
+            border-radius: 30px;
+            background-color: white;
+            text-decoration: none;
+            font-size: 20px;
+            width: 150px;
+            height: 50px;
+            font-weight: 500;
+        }
+
+        form .log:hover {
+            border: 2px solid #fabd02;
+            color: #000;
+            background-color: #fabd02;
+            transition: 0.5s;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 15px;
+        }
+
+        .para-2 {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+
+        .para-2 a {
+            color: #fabd02;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h1>Sign up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form action="../php/signup.php" method="POST">
+            <label>User Name
+                <input type="text" name="username" placeholder="Write your username" required>
+            </label>
+            <label>Email
+                <input type="email" name="email" placeholder="Write your email" required>
+            </label>
+            <label>Password
+                <input type="password" name="passwords" placeholder="Your password must contains 6-10 Characters"
+                    required>
+            </label>
+            <label>Confirm Password
+                <input type="password" name="confirm_password" placeholder="Re-write your password" required>
+            </label>
+
+            <input class="log" type="submit" value="Submit">
+        </form>
+
+        <p>By clicking the sign up button,you agree to our
+            <br>
+            <a href="Privacy-Terms.html" target="_blank">Terms and condition</a>
+        </p>
+    </div>
+    <p class="para-2">Already have an account? <a href="Homepage.html">Login here</a></p>
+</body>
+
+</html>

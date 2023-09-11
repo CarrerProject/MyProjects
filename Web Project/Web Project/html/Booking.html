@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/hp/Desktop/Web%20Project/html/Booking.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Book Your Place</title>
+
+    <link rel="stylesheet" href="./Booking_files/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Booking_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/bookingSheet.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>BOOK YOUR TRIP <span style="color: #fabd02;">!</span></h1>
+        <form action="../php/book.php" class="form" method="POST">
+            <div class="grid">
+                <div class="field">
+                    <label>ID :
+                        <input type="number" name="cust_id" placeholder="Enter your ID" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Full Name :
+                        <input type="text" name="cust_name" placeholder="Enter your name" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Email :
+                        <input type="email" name="cust_email" placeholder="Enter your email" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Address :
+                        <input type="text" name="cust_address" placeholder="Enter your address" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>where to :
+                        <input list="places" name="hotel" placeholder="Choose your place" required="">
+                        <datalist id="places">
+                            <option value="Abiansemal-Indonesia">
+                            </option>
+                            <option value="Udihana-Indonesia">
+                            </option>
+                            <option value="Bali-Indonesia">
+                            </option>
+                            <option value="BalianBeach-Indonesia">
+                            </option>
+                            <option value="klumpu-Sengapore">
+                            </option>
+                            <option value="Glamorous-Sengapore">
+                            </option>
+                            <option value="Sentosa-Sengapore">
+                            </option>
+                            <option value="Sidemen-Paris">
+                            </option>
+                            <option value="Cul-De-Sac-Paris">
+                            </option>
+                            <option value="Four Season-Dubai">
+                            </option>
+                            <option value="Feena-Dubai">
+                            </option>
+                            <option value="Palce-Dubai">
+                            </option>
+                            <option value="Cabrera-SanMartin">
+                            </option>
+                            <option value="LesTeres-SanMartin">
+                            </option>
+                            <option value="Eyana-Maldives">
+                            </option>
+                            <option value="Santa-Maldives">
+                            </option>
+                            <option value="Bekken-China">
+                            </option>
+                        </datalist>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>How Many :
+                        <input type="number" min="1" name="guests" placeholder="How many guests?" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Arrivals :
+                        <input type="date" name="arrivals" title="When you want to come back?" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Leaving :
+                        <input type="date" name="leaving" title="When you want to get there?" required="">
+                    </label>
+                </div>
+                <div class="field">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+                <div class="field">
+                    <input class="button" type="reset" value="Clear">
+                </div>
+                <div class="field">
+                    <a href="Delete.html">Delete</a>
+                </div>
+                <div class="field">
+                    <a href="Update.html">Edit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
